@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Country Quiz</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+
+    <section class="container-fluid" id="home">
+        <div class="row h-100">
+            <div class="col-12">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12">
+                            <div class="move-center d-flex justify-content-center h-100 align-items-center">
+                                <div class="col-12 col-md-5 col-lg-4 col-xl-3" id="main-card">
+                                    <h4 class="mb-4" id="capital-asean">Capitals of ASEAN</h4>
+                                    <div class="card rounded-2" id="card-transparent">
+                                        <div class="ms-auto" id="traveler-con" style="margin-top: -13%;width: 35%">
+                                            <img src="./assests/undraw_travelers_red.svg" class="w-100" alt="">
+                                        </div>
+                                        <div class="card-body" style="padding-bottom: 10px !important;" id="country-capital-con">
+                                            <div id="new-capital"></div>
+                                            <div>
+                                                <ul class="ps-0" id="list-group">
+                                                    <li cap="Bangkok" class="list-group-item mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">A</p>
+                                                        <p class="answer mb-0 fw-bold" style="letter-spacing: 1px" disabled="disabled">Thailand</p>
+                                                    </li>
+                                                    <li cap="Singapore" class="list-group-item mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">B</p>
+                                                        <p class="answer mb-0 fw-bold" style="letter-spacing: 1px" disabled="disabled">Singapore</p>
+                                                    </li>
+                                                    <li cap="Kualar Lampur" class="list-group-item mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">C</p>
+                                                        <p class="answer mb-0 fw-bold" style="letter-spacing: 1px" disabled="disabled">Malaysia</p>
+                                                    </li>
+                                                    <li cap="Jarkata" class="list-group-item mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">D</p>
+                                                        <p class="answer mb-0 fw-bold" style="letter-spacing: 1px" disabled="disabled">Indonesia</p>
+                                                    </li>
+                                                    <li cap="Nay Pyi Taw" class="list-group-item mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">E</p>
+                                                        <p class="answer mb-0 fw-bold" style="letter-spacing: 1px" disabled="disabled">Myanmar</p>
+                                                    </li>
+                                                    <li cap="Hanoi" class="list-group-item mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">F</p>
+                                                        <p class="answer mb-0 fw-bold" style="letter-spacing: 1px" disabled="disabled">Vietnam</p>
+                                                    </li>
+                                                    <li cap="Manila" class="list-group-item mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">G</p>
+                                                        <p class="answer mb-0 fw-bold" style="letter-spacing: 1px" disabled="disabled">Philippines</p>
+                                                    </li>
+                                                </ul>
+                                                <article class="d-flex justify-content-end">
+                                                    <button class="btn btn-outline-light text-danger fw-bold" style="letter-spacing: 1px;width: 100px" id="next">NEXT</button>
+                                                </article>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column p-3 align-items-center d-none" id="result-con">
+                                            <img src="./assests/undraw_winners_re_wr1l.svg" class="w-50 mb-3" alt="">
+                                            <article class="mb-3">
+                                                <h4 class="text-center">&smile; ASEAN</h4>
+                                                <p>Now you know The ASEAN &smile;</p>
+                                            </article>
+                                            <button class="btn btn-outline-success text-white" id="try-again-btn">
+                                                Try Again
+                                            </button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

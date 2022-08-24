@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<div class="loader">
+    <img src="./assests/Cube-1s-200px.svg" width="200" alt="">
+</div>
+<style>
+    .loader{
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Country Quiz Myanmar</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+
+    <section class="container-fluid" id="home">
+        <div class="row h-100">
+            <div class="col-12">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12">
+                            <div class="move-center d-flex justify-content-center h-100 align-items-center">
+                                <div class="col-12 col-md-5 col-lg-4 col-xl-3" id="main-card">
+                                    <h4 class="mb-4" id="capital-asean">အာဆီယံရဲ့ မြို့တော်များ</h4>
+                                    <div class="card rounded-2" id="card-transparent">
+                                        <div class="ms-auto" id="traveler-con" style="margin-top: -13%;width: 35%">
+                                            <img src="./assests/undraw_travelers_red.svg" class="w-100" alt="">
+                                        </div>
+                                        <div class="card-body" style="padding-bottom: 10px !important;" id="country-capital-con">
+                                            <div id="new-capital"></div>
+                                            <div>
+                                                <ul class="ps-0" id="list-group">
+                                                    <li cap="ဘန်ကောက်" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">A</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">ထိုင်း</p>
+                                                    </li>
+                                                    <li cap="စင်ကာပူ" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">B</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">စင်ကာပူ</p>
+                                                    </li>
+                                                    <li cap="ကွာလာလမ်ပူ" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">C</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">မလေးရှား</p>
+                                                    </li>
+                                                    <li cap="ဂျာကာတာ" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">D</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">အင်ဒိုးနီးရှား</p>
+                                                    </li>
+                                                    <li cap="နေပြည်တော်" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">E</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">မြန်မာ</p>
+                                                    </li>
+                                                    <li cap="ဟနွိုင်း" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">F</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">ဗီယက်နမ်</p>
+                                                    </li>
+                                                    <li cap="မနီလာ" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">G</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">ဖိလစ်ပိုင်</p>
+                                                    </li>
+                                                    <li cap="ဗီယန်တိန်" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">H</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">လာအို</p>
+                                                    </li>
+                                                    <li cap="ဖနွမ်ပင်" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">I</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">ကမ္ဘောဒီးယား</p>
+                                                    </li>
+                                                    <li cap="ဘန်ဒါစီရီဘန်ဂ၀န်" class="list-group-item py-2 mb-3 rounded-1 d-flex px-2 py-1 align-items-center list-unstyled border border-white border-1">
+                                                        <p class="no mb-0 me-4 text-danger fw-bold">J</p>
+                                                        <p class="answer mb-0 fw-bold" style="" disabled="disabled">ဘရူနိုင်း</p>
+                                                    </li>
+                                                </ul>
+                                                <article class="d-flex justify-content-end">
+                                                    <button class="btn btn-outline-light text-danger fw-bold" style="letter-spacing: 1px;width: 100px" id="next">NEXT</button>
+                                                </article>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column p-3 align-items-center d-none" id="result-con">
+                                            <img src="./assests/undraw_winners_re_wr1l.svg" class="w-50 mb-3" alt="">
+                                            <article class="mb-3">
+                                                <h4 class="text-center">Results</h4>
+                                                <p>You got <span id="point"></span> of 10.</p>
+                                            </article>
+                                            <button class="btn btn-outline-success text-white" id="try-again-btn">
+                                                Try Again
+                                            </button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        $(window).on('load',()=>{$('.loader').fadeOut(500)})
+    </script>
+</body>
+</html>

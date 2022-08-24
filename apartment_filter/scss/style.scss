@@ -1,0 +1,58 @@
+$secondary : #ffffff;
+
+#to-search-city{
+  color: black;
+}
+#dropdown-menu{
+  margin-top: 10px !important;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  li{
+    margin-bottom: 10px;
+  }
+}
+#dropdown-people-menu{
+  margin-top: 10px !important;
+  border-radius: 0;
+  li{
+    margin-bottom: 10px;
+  }
+}
+#all:hover{
+  background-color: #f3f1f1;
+}
+.width-100{
+  width: 100%;
+}
+.width-45{
+  width: 45%;
+}
+
+@media screen and(max-width: 480px){
+  #my-header{
+    display: block !important;
+  }
+  #btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    .width-45#dropdown-con{
+      width: 100% !important;
+      margin-right: 0px !important;
+      flex-grow: 1;
+      margin-bottom: 10px;
+    }
+    .width-45#dropdown-people{
+      flex-grow: 1;
+    }
+  }
+
+}
+
+
+$font-family-sans-serif : 'Roboto',sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&effect=fire-animation|3d|anaglyph');
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
