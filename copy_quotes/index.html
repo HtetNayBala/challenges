@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<div class="loader" id="loader">
+    <img src="./img/loader.svg" alt="">
+</div>
+<style>
+    .loader{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <style>
+        .modal-backdrop{
+            z-index: 1 !important;
+        }
+        .loader{
+            transition: 0.5s;
+        }
+    </style>
+    <script>
+        window.addEventListener('load',()=>{
+            document.getElementById('loader').style.display = 'none';
+        })
+    </script>
+</head>
+<body>
+
+
+<div id="video-container" class="overflow-hidden">
+    <video id="video" autoplay loop muted>
+        <source src="img/bg-video-1.mp4">
+    </video>
+
+    <video id="song" style="position: absolute;left: 0;bottom: 0;width: 100px;height: 100px;z-index: -1">
+        <source src="img/without_you.mkv">
+    </video>
+
+
+    <section class="container-fluid h-100" id="quotes-con">
+        <div class="row">
+            <div class="col-12">
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center min-vh-100 align-items-center">
+                                <div class="col-10 col-md-8 col-lg-4">
+                                    <h2 class="text-white text-center mb-4 border rounded-1 py-2 animate__animated animate__fadeInDown" style="background-color: #000000;">Quotes for your Life</h2>
+                                    <div id="quote-container" class="border border-1 mb-3 rounded-1 animate__animated animate__fadeInLeft overflow-hidden animate__delay-1s"></div>
+                                    <div class="writer-container d-flex align-items-center justify-content-between">
+                                        <button class="btn btn-outline-dark btn-sm animate__animated animate__fadeInLeft animate__delay-1s" id="refresh">
+                                            <i class="bi bi-arrow-right text-white"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark text-end animate__animated animate__fadeInRight animate__delay-2s" id="writer">
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <div class="" style="position: absolute;bottom: 1%;left: 0;width: 100%;z-index: 15">
+                    <article id="play-arrows">
+                        <div id="arrows">
+                            <button class="h-100 animate__animated animate__heartBeat animate__infinite" style="font-size: 20px" id="play">
+                                <i class="bi bi-play-btn-fill"></i>
+                            </button>
+                            <button class="h-100" style="font-size: 20px" id="pause">
+                                <i class="bi bi-pause-btn-fill"></i>
+                            </button>
+                        </div>
+                        <div class="volume">
+                            <div>
+                                <ul id="ulist" class="ps-0">
+                                    <li id="plus" class="vol-btns">
+                                        <i class="bi bi-plus"></i>
+                                    </li>
+                                    <li id="minus" class="vol-btns">
+                                        <i class="bi bi-dash"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" id="modal-btn" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                Do you want to play the background Music?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
+                                <button type="button" class="btn btn-primary" id="play-background">Play</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+</div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+</html>

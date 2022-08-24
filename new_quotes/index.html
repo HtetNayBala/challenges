@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script>
+
+        window.addEventListener('load',function (){
+            document.querySelector('.loader').style.display = 'none';
+        });
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center min-vh-100 align-items-center">
+                    <div class="col-12 col-md-8 col-lg-5">
+                        <h2 class="text-white mb-4">Quotes for your Life</h2>
+                        <div id="quote-container"></div>
+                        <div class="writer-container d-flex align-items-center justify-content-between">
+                            <button class="btn btn-outline-primary btn-sm" onclick="location.reload()" id="refresh">
+                                <i class="bi bi-arrow-right text-white"></i>
+                            </button>
+                            <button class="btn btn-outline-primary text-end" id="writer">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+</html>

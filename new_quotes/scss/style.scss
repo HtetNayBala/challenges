@@ -1,0 +1,26 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+body{
+  background-color: #000000;
+}
+#quote-container{
+
+}
+.quote{
+  border: 2px solid;
+  border-left-color: darkred;
+  border-right-color: darkolivegreen;
+  border-top-color: #0c4128;
+  border-bottom-color: #6d552b;
+  font-size: 25px;
+  text-align: justify;
+  padding: 20px;
+  color: white;
+}
+#writer{
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+}
