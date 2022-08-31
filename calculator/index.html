@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Calculator</title>
+    <meta name="title" content="Calculator">
+    <meta name="description" content="Calculator with JS">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https:/calc-hnb.netlify.app/">
+    <meta property="og:title" content="Calculator">
+    <meta property="og:description" content="Calculator with JS">
+    <meta property="og:image" content="data:image/png;base64,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">
+
+    <title>Calculator</title>
+</head>
+<body>
+
+<section class="container-fluid" id="box">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="vh-100 d-flex flex-column justify-content-center align-items-center">
+
+                        <div class="col-10 col-md-6 col-lg-5 col-xl-3" id="whole-box">
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3>Calc</h3>
+                                <div class="bg-dark rounded-3 border-0 px-1" id="dark-white" style="width: 60px;">
+                                    <i class="bi bi-moon-fill fs-5 animate__animated" style="animation-delay: 0.2s;animation-iteration-count: infinite" id="moon"></i>
+                                </div>
+                            </div>
+
+                            <div class="position-relative" style="height: 70px;margin-top: 10px;">
+                                <h1 class="result" id="result" style="display: none"></h1>
+                                <h1 class="position-absolute top-0 start-0" id="fake-zero" style="z-index: 1">0</h1>
+                            </div>
+
+                            <table class="w-100">
+                                <tr>
+                                    <td>
+                                        <div class="key">7</div>
+                                    </td>
+                                    <td>
+                                        <div class="key">8</div>
+                                    </td>
+                                    <td>
+                                        <div class="key">9</div>
+                                    </td>
+                                    <td>
+                                        <div class="key" id="del">Del</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="key">4</div>
+                                    </td>
+                                    <td>
+                                        <div class="key">5</div>
+                                    </td>
+                                    <td>
+                                        <div class="key">6</div>
+                                    </td>
+                                    <td>
+                                        <div class="key calc-keys">+</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="key">1</div>
+                                    </td>
+                                    <td>
+                                        <div class="key">2</div>
+                                    </td>
+                                    <td>
+                                        <div class="key">3</div>
+                                    </td>
+                                    <td>
+                                        <div class="key calc-keys">-</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="key">.</div>
+                                    </td>
+                                    <td>
+                                        <div class="key">0</div>
+                                    </td>
+                                    <td>
+                                        <div class="key calc-keys">/</div>
+                                    </td>
+                                    <td>
+                                        <div class="key calc-keys">*</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="bg-danger mt-2 me-1" id="reset" style="border-radius: 10px;height: 50px;line-height: 50px;text-align: center">Reset</div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div class="mt-2 ms-1" id="calc" style="border-radius: 10px;height: 50px;line-height: 50px;text-align: center">=</div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
